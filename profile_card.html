@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Profile Card</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #FFF;
+        }
+
+        .profile-card .btn-primary,
+        .profile-card .btn-primary:hover,
+        .profile-card .btn-secondary,
+        .profile-card .btn-secondary:hover,
+        .profile-card .btn-primary a,
+        .profile-card .btn-primary a:hover,
+        .profile-card .btn-secondary a,
+        .profile-card .btn-secondary:hover a {
+            -webkit-transition: color 0.3s linear;
+            -moz-transition: color 0.3s linear;
+            -ms-transition: color 0.3s linear;
+            -o-transition: color 0.3s linear;
+            transition: color 0.3s linear;
+        }
+
+        .profile-card {
+            background: linear-gradient(to bottom, rgba(197, 82, 1, 0.1) 0%, rgba(197, 82, 1, 0) 45%, rgba(197, 82, 1, 0) 97%);
+
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            padding: 20px;
+            max-width: 300px;
+            width: 100%;
+        }
+
+        .profile-card .badge {
+            background-color: #c55201;
+            color: #fff;
+            padding: 5px 10px;
+            border-radius: 50px;
+            display: inline-block;
+            font-size: 12px;
+            margin-bottom: 15px;
+        }
+
+        .profile-card .profile-pic {
+            width: 200px;
+            height: 200px;
+            border: 1px solid #c55201;
+            border-radius: 100%;
+            margin: 0 auto 15px;
+            overflow: hidden;
+            -webkit-box-shadow: 0 0 15px 1px rgba(77, 32, 0, 0.3);
+            box-shadow: 0 0 15px 1px rgba(77, 32, 0, 0.3);
+        }
+
+        .profile-card .profile-pic img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border: 3px solid #FFF;
+            border-radius: 100%;
+        }
+
+        .profile-card h2 {
+            font-size: 22px;
+            margin-bottom: 5px;
+        }
+
+        .profile-card h4 {
+            font-size: 16px;
+            color: #777;
+            margin-bottom: 15px;
+        }
+
+        .profile-card p {
+            font-size: 14px;
+            color: #777;
+            margin-bottom: 20px;
+        }
+
+        .profile-card .stats {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .profile-card .stats div {
+            text-align: center;
+        }
+
+        .profile-card .stats h3 {
+            font-size: 20px;
+            margin-bottom: 5px;
+        }
+
+        .profile-card .stats p {
+            font-size: 14px;
+            color: #777;
+        }
+
+        .profile-card .buttons {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .profile-card .btn-primary,
+        .profile-card .btn-secondary {
+            border: none;
+            padding: 10px 20px;
+            border-radius: 25px;
+            cursor: pointer;
+        }
+
+        .profile-card .btn-primary {
+            background-color: #fff;
+            color: #000;
+            border: 1px solid #c55201;
+        }
+
+        .profile-card .btn-primary:hover {
+            background-color: #c55201;
+            color: #fff;
+        }
+
+        .profile-card .btn-secondary {
+            background-color: #c55201;
+            color: #fff;
+        }
+
+        .profile-card .btn-primary a {
+            color: #000 !important;
+            text-decoration: none !important;
+        }
+
+        .profile-card .btn-primary:hover a {
+            color: #FFF !important;
+            text-decoration: none !important;
+        }
+
+        .profile-card .btn-secondary a {
+            color: #FFF !important;
+            text-decoration: none !important;
+        }
+
+        .profile-card .btn-secondary:hover a {
+            color: #000 !important;
+            text-decoration: none !important;
+        }
+
+        .profile-card .btn-secondary:hover {
+            background-color: #fff;
+            color: #000;
+            border: 1px solid #c55201;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="profile-card">
+        <div class="badge">PRO</div>
+        <div class="profile-pic">
+            <img src="profilePhotoTea.jpg" alt="Profile Picture">
+        </div>
+        <h2>Haroon or Rasheed</h2>
+        <h4>You can't have both</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci perferendis laboriosam nisi voluptates
+            accusantium harum veniam.</p>
+        <div class="stats">
+            <div>
+                <h3>18</h3>
+                <p>Projects</p>
+            </div>
+            <div>
+                <h3>464</h3>
+                <p>Following</p>
+            </div>
+            <div>
+                <h3>852</h3>
+                <p>Followers</p>
+            </div>
+        </div>
+        <div class="buttons">
+            <button class="btn-primary"><a href="mailto:haroonorrasheed@freemail.com">Email</a></button>
+            <button class="btn-secondary"><a href="tel:+12241139">Call me</a></button>
+        </div>
+    </div>
+</body>
+
+</html>
